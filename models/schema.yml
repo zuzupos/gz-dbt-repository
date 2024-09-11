@@ -17,7 +17,7 @@ sources:
             description: date of purchase
           - name: orders_id
             description: id of the order
-          - name: products_id
+          - name: pdt_id
             description: id of the product within the order
           - name: revenue
             description: amount of money earned from the sale of that product
@@ -25,7 +25,7 @@ sources:
             description: number of that products in that order 
         tests:
           - unique:
-              column_name: "(orders_id || '-' || products_id)"
+              column_name: "(orders_id || '-' || pdt_id)"
       - name: product
         identifier: raw_gz_product
         description: products of Greenweez
