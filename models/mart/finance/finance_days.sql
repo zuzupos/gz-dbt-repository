@@ -1,3 +1,4 @@
+
 WITH finance AS (
     SELECT 
         s.logcost,
