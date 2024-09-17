@@ -76,3 +76,20 @@ sources:
         tests:
           - unique:
               column_name: "(date_date || '-' || campaign_key)"
+
+models:
+  - name: int_orders_margin
+    description: intermediate stage of orders and margin table
+    columns:
+      - name: orders_id
+        description: id numbers of orders
+      - name: date_date
+        description: date of each odrer
+  - name: int_campaigns
+    description: intermediate table for campaigns
+  - name: int_campaigns_day
+    description: intermediate table for daily campaigns
+  - name: int_orders_operational
+    description: intermediate table for operational margin from orders
+  - name: int_sales_margin
+    description: intermediate table for margin with sales
